@@ -24,11 +24,11 @@ app.innerHTML = `
 <div id='dados'>
             <div id='campos'>
             <label >Qtd Pessoas: </label>
-            <input type='text' id='pessoas'placeholder='qtd pessoas'>
+            <input type='text' id='pessoas'placeholder='Pessoas'>
             <label>Qtd Eletrodomesticos: </label>
-            <input type='text' id='eletro' placeholder='qtd Eletrodomesticos'>
-            <label>Qtd metragem: </label>
-            <input type="text" name="" id="metragem">
+            <input type='text' id='eletro' placeholder='Eletrodomesticos'>
+            <label>Metragem: </label>
+            <input type="text" name="" id="metragem" placeholder='Metragem'>
             </div>
             <input type='button' id='d'value='calcular' onclick='calcular()'>
             </div>
@@ -47,7 +47,7 @@ app.innerHTML = `
          
 
              let resultado = (+metragem * BTU) + ((+pessoas-1) * BTU) + (+eletro * BTU)
-             document.getElementById('res').innerHTML = `Sera necessario ${resultado}btus, para um ambiente de ${metragem}m2  ${resultado}  `
+             document.getElementById('res').innerHTML = `Sera necessario ${resultado}btus, para um ambiente de ${metragem}m2  `
 
 
             }
