@@ -5,14 +5,22 @@
 h1{
     text-align: center;
 }
-#app{
- 
+#principal{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-direction: row;
+
 }
-#dados{
+#app{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+#dados { 
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #campos{
@@ -38,4 +46,9 @@ h1{
 #d:hover{
     border-radius: 3px;
     cursor: pointer;
+}
+
+#imgAr{
+width: 180px;
+height: 180px;
 }
